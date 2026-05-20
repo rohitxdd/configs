@@ -18,8 +18,8 @@ else
     echo "No existing .tmux.conf to backup"
 fi
 
-if [ -f "$CONFIG_DIR/.tmux.conf" ]; then
-    cp "$CONFIG_DIR/.tmux.conf" "$HOME/.tmux.conf"
+if [ -f "$CONFIG_DIR/tmux.conf" ]; then
+    cp "$CONFIG_DIR/tmux.conf" "$HOME/.tmux.conf"
     echo "tmux config restored"
 else
     echo "Missing .tmux.conf in configs folder"
